@@ -1,0 +1,335 @@
+QWidget
+{
+    color: #282828;
+    background-color: #aba8a6;
+    font-size: 12px;
+}
+
+/* Use system scroll bars */
+QAbstractSlider
+{
+    background-color: none;
+}
+
+/***************************************
+** QTextEdit
+****************************************/
+
+QTextEdit
+{
+    background-color: white;
+    color: black;
+    border: 1px solid #646464;
+}
+
+/***************************************
+** QLineEdit
+****************************************/
+
+QLineEdit
+{
+    color: #e4e6ea;
+    background-color: #363333;
+    border: 8px;
+    border-image: url(laf_resources:/icons/xsi/QLineEdit_border.png) 8;
+    padding: -5px;
+}
+
+/***************************************
+** QTabWidget / QTabBar
+****************************************/
+
+QTabWidget
+{
+    border-style: none;
+}
+
+QTabWidget::tab-bar
+{
+    position: absolute;
+}
+
+QTabWidget::pane
+{
+    border: 1px solid #898989;
+    top: -1px;
+}
+
+QTabBar
+{
+    border-bottom: 1px solid #898989;
+    bottom: -1px;
+}
+
+QTabBar::tab
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #282828;
+    background-color: #9f9c9a;
+    border: 1px solid #898989;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 2px 8px 2px 8px;
+    margin-right: 1px;
+}
+
+QTabBar::tab:selected
+{
+    color: #0a0a0a;
+    background-color: #aba8a6;
+    border-bottom-style: none;
+}
+
+/***************************************
+** QPushButton
+****************************************/
+
+QPushButton
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #282828;
+    border: 8px;
+    border-image: url(laf_resources:/icons/xsi/QPushButton_border.png) 8;
+}
+QPushButton:hover
+{
+    border-image: url(laf_resources:/icons/xsi/QPushButton_border_hover.png) 8;
+}
+QPushButton:pressed
+{
+    border-image: url(laf_resources:/icons/xsi/QPushButton_border_pressed.png) 8;
+}
+
+/***************************************
+** QMenuBar / QMenu
+****************************************/
+
+QMenuBar::item
+{
+    color: black;
+    border-radius: 3px;
+    padding: 3px 6px 3px 6px;
+    margin: 0px 1px 1px 1px;
+    background-color: #aba8a6;
+    font-size: 11px;
+}
+
+QMenuBar::item:selected
+{
+    color: white;
+    background-color: #3399ff;
+}
+
+QMenu
+{
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: #e0e0e0;
+}
+
+QMenu::item
+{
+    font-size: 11px;
+    border-radius: 3px;
+    padding: 2px 24px 2px 24px;
+    margin: 1px;
+}
+
+QMenu::item:selected
+{
+    color: white;
+    background-color: #3399ff;
+}
+
+QMenu::separator
+{
+    height:0px;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #eaeaea;
+    margin: 4px;
+}
+
+/***************************************
+** QCheckBox
+****************************************/
+
+QCheckBox::indicator
+{
+    width: 20px;
+    height: 20px;
+}
+
+QCheckBox::indicator:unchecked
+{
+    image: url(laf_resources:/icons/xsi/QCheckBox_indicator_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:hover
+{
+    image: url(laf_resources:/icons/xsi/QCheckBox_indicator_unchecked_hover.png);
+}
+
+QCheckBox::indicator:checked
+{
+    image: url(laf_resources:/icons/xsi/QCheckBox_indicator_checked.png);
+}
+
+QCheckBox::indicator:checked:hover
+{
+    image: url(laf_resources:/icons/xsi/QCheckBox_indicator_checked_hover.png);
+}
+
+/***************************************
+** QComboBox
+****************************************/
+
+QComboBox
+{
+    color: #e4e6ea;
+    background-color: #363333;
+    border: 8px;
+    border-image: url(laf_resources:/icons/xsi/QComboBox_border.png) 8;
+    padding: -5px -3px -7px 0px;
+}
+
+QComboBox::drop-down
+{
+    image: url(laf_resources:/icons/xsi/QComboBox_dropdown.png);
+    subcontrol-position: center right;
+    margin-right: -6px;
+}
+
+QComboBox::drop-down:hover
+{
+    image: url(laf_resources:/icons/xsi/QComboBox_dropdown_hover.png);
+}
+
+QComboBox::drop-down:on
+{
+    image: url(laf_resources:/icons/xsi/QComboBox_dropdown_on.png);
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+/***************************************
+** QSplitter
+****************************************/
+
+QSplitter::handle
+{
+    border-width: 5px 5px 5px 5px;
+    margin: 0px -8px -8px 0px; /* magic? */
+}
+
+QSplitter::handle:horizontal
+{
+    width: 0px; /* has no effect */
+    border-image: url(laf_resources:/icons/xsi/QSplitter_handle_horizontal.png) 5px 20px 0px 20px;
+}
+
+QSplitter::handle:vertical
+{
+    height: 0px;
+    border-image: url(laf_resources:/icons/xsi/QSplitter_handle_vertical.png) 20px 0px 20px 5px;
+}
+
+QSplitter::handle:pressed
+{
+    border-image: none;
+    background-color: #696969;
+}
+
+/***************************************
+** QTreeView / QHeaderView
+****************************************/
+
+QHeaderView
+{
+    color: #282828;
+    background-color: #aba8a6;
+    border-top: 1px solid #a19e9c;
+    border-bottom: 1px solid #bab8b5;
+}
+
+QHeaderView::section
+{
+    color: #282828;
+    background-color: #aba8a6;
+    padding: 5px;
+    border-top: 1px solid #c4c2bf;
+    border-left: 1px solid #c4c2bf;
+    border-bottom: 1px solid #83807e;
+    border-right: 1px solid #83807e;
+}
+
+QTreeView
+{
+}
+
+QTreeView::item
+{
+    height: 18px;
+    background: #aba8a6;
+}
+
+QTreeView::item:selected
+{
+    color: black;
+    background-color: #aba8a6;
+}
+
+QTreeView::item:first
+{
+    margin-left: 5px;
+}
+
+QTreeView::item:first:selected
+{
+    color: black;
+    background-color: white;
+}
+
+QTreeView::branch
+{
+    height: 18px;
+    margin-left: 5px;
+    margin-right: -5px;
+    image-position: right;
+}
+
+QTreeView::branch:!has-children:has-siblings:!adjoins-item
+{
+    image: url(laf_resources:/icons/xsi/QTreeView_branch_vline.png);
+}
+
+QTreeView::branch:!has-children:has-siblings:adjoins-item
+{
+    image: url(laf_resources:/icons/xsi/QTreeView_branch_siblings.png);
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item
+{
+    image: url(laf_resources:/icons/xsi/QTreeView_branch_end.png);
+}
+
+QTreeView::branch:has-children:has-siblings:open
+{
+    image: url(laf_resources:/icons/xsi/QTreeView_branch_open_siblings.png);
+}
+
+QTreeView::branch:has-children:!has-siblings:open
+{
+    image: url(laf_resources:/icons/xsi/QTreeView_branch_open_end.png);
+}
+
+QTreeView::branch:has-children:has-siblings:closed
+{
+    image: url(laf_resources:/icons/xsi/QTreeView_branch_closed_siblings.png);
+}
+
+QTreeView::branch:has-children:!has-siblings:closed
+{
+    image: url(laf_resources:/icons/xsi/QTreeView_branch_closed_end.png);
+}
