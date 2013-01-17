@@ -1,0 +1,337 @@
+QWidget
+{
+    color: #cccccc;
+    background-color: #3a3a3a;
+    font-size: 11px;
+}
+
+/***************************************
+** QGroupBox
+****************************************/
+
+QGroupBox
+{
+    border: 1px solid black;
+    margin-top: 1.2em;
+}
+
+QGroupBox::title
+{
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 4px;
+}
+
+/***************************************
+** QPushButton
+****************************************/
+
+QPushButton
+{
+    border-width: 4px;
+    padding: 1px 2px 4px 2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #535353, stop: 1 #3a3a3a);
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border.png) 4;
+}
+
+QPushButton:hover
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #585858, stop: 1 #3d3d3d);
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_hover.png) 4;
+}
+
+QPushButton:pressed
+{
+    padding: 2px 2px 3px 2px;
+    background-color: #b98620;
+    color: white;
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_pressed.png) 4;
+}
+
+/***************************************
+** QCheckBox
+****************************************/
+
+QCheckBox:hover
+{
+    color: white;
+}
+
+QCheckBox::indicator
+{
+    width: 14px;
+    height: 14px;
+}
+
+QCheckBox::indicator:unchecked
+{
+    image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:pressed
+{
+    image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_checked.png);
+}
+
+QCheckBox::indicator:checked
+{
+    image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_checked.png);
+}
+
+QCheckBox::indicator:checked:hover
+{
+    image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_checked_hover.png);
+}
+
+QCheckBox::indicator:checked:pressed
+{
+    image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_unchecked.png);
+}
+
+/***************************************
+** QLineEdit
+****************************************/
+
+QLineEdit
+{
+    font: 11px Courier;
+    background-color: #131313;
+    color: white;
+    border-width: 2px 1px 1px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QLineEdit_border.png) 2 1 1 2;
+    selection-background-color: #b98620;
+    selection-color: #131313;
+}
+
+/***************************************
+** QTextEdit
+****************************************/
+
+QTextEdit
+{
+    background-color: #272727;
+    color: white;
+    border-width: 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QTextEdit_border.png) 2;
+}
+
+/***************************************
+** QSplitter
+****************************************/
+
+QSplitter::handle
+{
+    background-color: #494949;
+}
+
+
+QSplitter::handle:pressed
+{
+    background-color: #5f5541;
+}
+
+QSplitter::handle:horizontal
+{
+    width: 7px;
+    image: url(laf_resources:/icons/houdini/dark/QSplitter_handle_horizontal_image.png);
+}
+
+QSplitter::handle:vertical
+{
+    height: 7px;
+    image: url(laf_resources:/icons/houdini/dark/QSplitter_handle_vertical_image.png);
+}
+
+/***************************************
+** QTabWidget / QTabBar
+****************************************/
+
+QTabBar::tab
+{
+    padding: 4px 10px 2px 10px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #505050, stop: 1 #303030);
+}
+
+QTabBar::tab:!first
+{
+    border-width: 2px 1px 2px 1px;
+    border-image: url(laf_resources:/icons/houdini/dark/QTabWidget_tab_border.png) 2 1 2 1;
+}
+
+QTabBar::tab:first
+{
+    border-width: 2px 1px 2px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QTabWidget_tab_first_border.png) 2 1 2 2;
+}
+
+QTabBar::tab:hover
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #535353, stop: 1 #323232);
+}
+
+QTabBar::tab:selected
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #555555, stop: 1 #3d3d3d);
+}
+
+QTabBar::tab:!first:selected
+{
+    border-width: 2px 1px 1px 1px;
+    border-image: url(laf_resources:/icons/houdini/dark/QTabWidget_tab_selected_border.png) 2 1 1 1;
+}
+
+QTabBar::tab:first:selected
+{
+    border-width: 2px 1px 1px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QTabWidget_tab_first_selected_border.png) 2 1 1 2;
+}
+
+QTabBar::tab:selected:hover
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 1 #3f3f3f);
+}
+
+QTabWidget::pane
+{
+    top: -1px;
+    border-width: 1px 1px 1px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QTabWidget_pane_border.png) 1 1 1 2;
+}
+
+/***************************************
+** QScrollBar
+****************************************/
+
+QScrollBar
+{
+    background-color: #262626;
+    border: 1px solid #2e2e2e;
+}
+
+QScrollBar::add-page,
+QScrollBar::sub-page
+{
+    background: none;
+}
+
+QScrollBar:vertical
+{
+    width: 14px;
+    margin: 0px 0px 36px 0px;
+}
+
+QScrollBar::handle:vertical
+{
+    margin: -1px;
+    min-height: 24px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #565656, stop: 1 #3c3c3c);
+    border-width: 2px 1px 1px 1px;
+    border-image: url(laf_resources:/icons/houdini/dark/QScrollBar_handle_vertical_border.png) 2 1 1 1;
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_handle_vertical.png);
+}
+
+QScrollBar::handle:vertical:pressed
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #5a5a5a, stop: 1 #3f3f3f);
+}
+
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:vertical
+{
+    height: 18px;
+    subcontrol-origin: margin;
+    subcontrol-position: bottom;
+}
+
+QScrollBar::sub-line:vertical
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_uparrow.png);
+    bottom:18px;
+}
+
+QScrollBar::sub-line:vertical:hover
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_uparrow_hover.png);
+}
+
+QScrollBar::sub-line:vertical:pressed
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_uparrow_pressed.png);
+}
+
+QScrollBar::add-line:vertical
+{
+    subcontrol-position: bottom;
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_downarrow.png);
+}
+
+QScrollBar::add-line:vertical:hover
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_downarrow_hover.png);
+}
+
+QScrollBar::add-line:vertical:pressed
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_downarrow_pressed.png);
+}
+
+QScrollBar:horizontal
+{
+    height: 14px;
+    margin: 0px 36px 0px 0px;
+    border-bottom-color: black;
+}
+
+QScrollBar::handle:horizontal
+{
+    margin: -1px 0px -1px 0px;
+    min-width: 24px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 1 #3c3c3c);
+    border-width: 1px 1px 1px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QScrollBar_handle_horizontal_border.png) 1 1 1 2;
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_handle_horizontal.png);
+}
+
+QScrollBar::handle:horizontal:pressed
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #5a5a5a, stop: 1 #3f3f3f);
+}
+
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-line:horizontal
+{
+    width: 18px;
+    subcontrol-origin: margin;
+    subcontrol-position: right;
+}
+
+QScrollBar::sub-line:horizontal
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_leftarrow.png);
+    right: 18px;
+}
+
+QScrollBar::sub-line:horizontal:hover
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_leftarrow_hover.png);
+}
+
+QScrollBar::sub-line:horizontal:pressed
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_leftarrow_pressed.png);
+}
+
+QScrollBar::add-line:horizontal
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_rightarrow.png);
+}
+
+QScrollBar::add-line:horizontal:hover
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_rightarrow_hover.png);
+}
+
+QScrollBar::add-line:horizontal:pressed
+{
+    image: url(laf_resources:/icons/houdini/dark/QScrollBar_rightarrow_pressed.png);
+}
