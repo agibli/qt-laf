@@ -49,6 +49,57 @@ QPushButton:pressed
 }
 
 /***************************************
+** QComboBox
+****************************************/
+
+QComboBox
+{
+    height: 16px;
+    border-width: 4px;
+    padding: -1px 0px 1px 8px;
+    margin: 0px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #535353, stop: 1 #3a3a3a);
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border.png) 4;
+}
+
+QComboBox:hover
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #585858, stop: 1 #3d3d3d);
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_hover.png) 4;
+}
+
+QComboBox:on
+{
+    padding: 0px 0px 0px 8px;
+    background-color: #b98620;
+    color: white;
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_pressed.png) 4;
+}
+
+QComboBox::drop-down
+{
+    width: 22px;
+    margin: 1px 2px 3px 0px;
+    subcontrol-origin: margin;
+    subcontrol-position: center right;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3f3f3f, stop: 1 #282828);
+    image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown.png);
+}
+
+QComboBox::drop-down:hover
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #424242, stop: 1 #2a2a2a);
+}
+
+QComboBox::drop-down:on
+{
+    image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown_pressed.png);
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #9a7428, stop: 1 #956e22);
+    margin: 2px 4px 3px 0px;
+    width: 20px;
+}
+
+/***************************************
 ** QCheckBox
 ****************************************/
 
