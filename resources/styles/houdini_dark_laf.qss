@@ -34,6 +34,13 @@ QPushButton
     border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border.png) 4;
 }
 
+QPushButton:disabled
+{
+    background-color: #393939;
+    color: #848484;
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_disabled.png) 4;
+}
+
 QPushButton:hover
 {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #585858, stop: 1 #3d3d3d);
@@ -62,6 +69,13 @@ QComboBox
     border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border.png) 4;
 }
 
+QComboBox:disabled
+{
+    background-color: #393939;
+    color: #848484;
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_disabled.png) 4;
+}
+
 QComboBox:hover
 {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #585858, stop: 1 #3d3d3d);
@@ -84,6 +98,12 @@ QComboBox::drop-down
     subcontrol-position: center right;
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3f3f3f, stop: 1 #282828);
     image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown.png);
+}
+
+QComboBox::drop-down:disabled
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #353535, stop: 1 #333333);
+    image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown_disabled.png);
 }
 
 QComboBox::drop-down:hover
@@ -131,6 +151,11 @@ QCheckBox::indicator:unchecked
     image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_unchecked.png);
 }
 
+QCheckBox::indicator:unchecked:disabled
+{
+    image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_unchecked_disabled.png);
+}
+
 QCheckBox::indicator:unchecked:pressed
 {
     image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_checked.png);
@@ -139,6 +164,11 @@ QCheckBox::indicator:unchecked:pressed
 QCheckBox::indicator:checked
 {
     image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_checked.png);
+}
+
+QCheckBox::indicator:checked:disabled
+{
+    image: url(laf_resources:/icons/houdini/dark/QCheckBox_indicator_checked_disabled.png);
 }
 
 QCheckBox::indicator:checked:hover
@@ -165,6 +195,15 @@ QLineEdit
     selection-background-color: #b98620;
     selection-color: #131313;
 }
+
+QLineEdit:disabled
+{
+    background-color: #2f2f2f;
+    color: #4e4e4e;
+    border-width: 2px 1px 1px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QLineEdit_border_disabled.png) 2 1 1 2;
+}
+
 
 /***************************************
 ** QTextEdit
