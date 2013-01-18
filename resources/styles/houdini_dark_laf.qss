@@ -99,6 +99,18 @@ QComboBox::drop-down:on
     width: 20px;
 }
 
+QComboBox QAbstractItemView
+{
+    background-color: #3a3a3a;
+    border: 1px solid;
+    border-top-color: #949494;
+    border-left-color: #949494;
+    border-bottom-color: #262626;
+    border-right-color: #262626;
+    selection-color: white;
+    selection-background-color: #494949;
+}
+
 /***************************************
 ** QCheckBox
 ****************************************/
@@ -385,4 +397,135 @@ QScrollBar::add-line:horizontal:hover
 QScrollBar::add-line:horizontal:pressed
 {
     image: url(laf_resources:/icons/houdini/dark/QScrollBar_rightarrow_pressed.png);
+}
+
+/***************************************
+** QMenuBar
+****************************************/
+
+QMenuBar
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3a3a3a, stop: 1 #323232);
+    border: 1px 1px 1px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QMenuBar_border.png) 1 1 1 2;
+}
+
+QMenuBar::item
+{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+QMenuBar::item:selected
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3f3f3f, stop: 1 #363636);
+}
+
+QMenuBar::item:open
+{
+    background-color: #494949;
+    color: white;
+}
+
+QMenu
+{
+    background-color: #3a3a3a;
+    border: 1px solid;
+    border-top-color: #949494;
+    border-left-color: #949494;
+    border-bottom-color: #262626;
+    border-right-color: #262626;
+}
+
+QMenu::item
+{
+    padding: 4px 10px 4px 10px;
+}
+
+QMenu::item:selected
+{
+    color: white;
+    background-color: #494949;
+}
+
+QMenu::separator
+{
+    height:1px;
+    background-color: #949494;
+    margin: 8px 0px;
+}
+
+/***************************************
+** QTreeView
+****************************************/
+
+QAbstractItemView
+{
+    background-color: #2e2e2e;
+    alternate-background-color: #3a3a3a;
+}
+
+QHeaderView::section
+{
+    padding: 2px 4px 1px 4px;
+    border: 1px solid #191919;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #393939, stop: 1 #272727);
+}
+
+QTreeView::item
+{
+    height: 18px;
+    background-color: rgba(0,0,0,0);
+}
+
+QTreeView::item:hover
+{
+    height: 18px;
+    background-color: rgba(0,0,0,0);
+}
+
+QTreeView::item:selected
+{
+    color: white;
+    background-color: #b98620;
+}
+
+QTreeView::branch
+{
+    height: 18px;
+    image-position: right;
+}
+
+QTreeView::branch:!has-children:has-siblings:!adjoins-item
+{
+    image: url(laf_resources:/icons/houdini/dark/QTreeView_branch_vline.png);
+}
+
+QTreeView::branch:!has-children:has-siblings:adjoins-item
+{
+    image: url(laf_resources:/icons/houdini/dark/QTreeView_branch_siblings.png);
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item
+{
+    image: url(laf_resources:/icons/houdini/dark/QTreeView_branch_end.png);
+}
+
+QTreeView::branch:has-children:has-siblings:open
+{
+    image: url(laf_resources:/icons/houdini/dark/QTreeView_branch_open_siblings.png);
+}
+
+QTreeView::branch:has-children:!has-siblings:open
+{
+    image: url(laf_resources:/icons/houdini/dark/QTreeView_branch_open_end.png);
+}
+
+QTreeView::branch:has-children:has-siblings:closed
+{
+    image: url(laf_resources:/icons/houdini/dark/QTreeView_branch_closed_siblings.png);
+}
+
+QTreeView::branch:has-children:!has-siblings:closed
+{
+    image: url(laf_resources:/icons/houdini/dark/QTreeView_branch_closed_end.png);
 }
