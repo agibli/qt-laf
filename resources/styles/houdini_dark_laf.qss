@@ -5,6 +5,11 @@ QWidget
     font-size: 11px;
 }
 
+QWidget:disabled
+{
+    color: #848484;
+}
+
 /***************************************
 ** QGroupBox
 ****************************************/
@@ -76,7 +81,7 @@ QComboBox:disabled
     border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_disabled.png) 4;
 }
 
-QComboBox:hover
+QComboBox:!editable:hover
 {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #585858, stop: 1 #3d3d3d);
     border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_hover.png) 4;
@@ -131,6 +136,57 @@ QComboBox QAbstractItemView
     selection-background-color: #494949;
 }
 
+/* Editable QComboBoxes get special treatment */
+
+QComboBox:editable
+{
+    padding: -1px 0px 1px 2px;
+    font: 11px Courier;
+    background-color: #131313;
+    color: white;
+    padding: 2px -24px 2px 0px;
+    margin: 0px 24px 0px 0px;
+    border-width: 2px 1px 1px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QLineEdit_border.png) 2 1 1 2;
+    selection-background-color: #b98620;
+    selection-color: #131313;
+}
+
+QComboBox:editable:disabled
+{
+    background-color: #2f2f2f;
+    color: #4e4e4e;
+    border-image: url(laf_resources:/icons/houdini/dark/QLineEdit_border_disabled.png) 2 1 1 2;
+}
+
+QComboBox::drop-down:editable
+{
+    width: 18px;
+    height: 18px;
+    margin: 1px 0px 0px 0px;
+    padding: 0px;
+    subcontrol-origin: margin;
+    subcontrol-position: center right;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3f3f3f, stop: 1 #262626);
+    border-width: 1px 2px 3px 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown_border_editable.png) 1 2 3 2;
+    image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown.png);
+}
+
+QComboBox::drop-down:editable:on
+{
+    background-color: #b98620;
+    border-image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown_border_editable_pressed.png) 1 2 3 2;
+    image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown_pressed.png);
+}
+
+QComboBox::drop-down:editable:disabled
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3f3f3f, stop: 1 #262626);
+    border-image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown_border_editable_disabled.png);
+    image: url(laf_resources:/icons/houdini/dark/QComboBox_dropdown_disabled.png);
+}
+
 /***************************************
 ** QCheckBox
 ****************************************/
@@ -138,6 +194,11 @@ QComboBox QAbstractItemView
 QCheckBox:hover
 {
     color: white;
+}
+
+QCheckBox:disabled
+{
+    color: #848484;
 }
 
 QCheckBox::indicator
@@ -191,6 +252,7 @@ QLineEdit
     background-color: #131313;
     color: white;
     border-width: 2px 1px 1px 2px;
+    padding: 2px 0px;
     border-image: url(laf_resources:/icons/houdini/dark/QLineEdit_border.png) 2 1 1 2;
     selection-background-color: #b98620;
     selection-color: #131313;
@@ -200,7 +262,6 @@ QLineEdit:disabled
 {
     background-color: #2f2f2f;
     color: #4e4e4e;
-    border-width: 2px 1px 1px 2px;
     border-image: url(laf_resources:/icons/houdini/dark/QLineEdit_border_disabled.png) 2 1 1 2;
 }
 
