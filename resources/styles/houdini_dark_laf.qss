@@ -33,6 +33,7 @@ QGroupBox::title
 
 QPushButton
 {
+    margin: 0px;
     border-width: 4px;
     padding: 1px 2px 4px 2px;
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #535353, stop: 1 #3a3a3a);
@@ -58,6 +59,27 @@ QPushButton:pressed
     background-color: #b98620;
     color: white;
     border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_pressed.png) 4;
+}
+
+QPushButton:flat
+{
+    padding: 5px 6px 8px 6px;
+    background: transparent;
+    border-width: 0px;
+}
+
+QPushButton:flat:hover
+{
+    background-color: #3d3d3d;
+}
+
+QPushButton:flat:pressed
+{
+    padding: 4px 4px 6px 3px;
+    background-color: #b98620;
+    color: white;
+    border-width: 2px 2px 1px 3px;
+    border-image: url(laf_resources:/icons/houdini/dark/QPushButton_border_flat_pressed.png) 2 2 1 3;
 }
 
 /***************************************
