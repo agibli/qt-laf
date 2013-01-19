@@ -528,6 +528,74 @@ QScrollBar::add-line:horizontal:pressed
 }
 
 /***************************************
+** QSlider
+****************************************/
+
+QSlider:horizontal
+{
+    height: 21px;
+}
+
+QSlider:hover
+{
+    background-color: #3d3d3d;
+}
+
+QSlider::groove:horizontal
+{
+    margin: 0px;
+    border-width: 0px;
+}
+
+QSlider::sub-page:horizontal,
+QSlider::add-page:horizontal
+{
+    background-clip: content;
+    margin: 8px 0px;
+}
+
+QSlider::sub-page:horizontal
+{
+    background-color: #333333;
+    border-width: 2px 0px 1px 1px;
+    border-image: url(laf_resources:/icons/houdini/dark/QSlider_subpage_border.png) 2 1 1 1;
+}
+
+QSlider::add-page:horizontal
+{
+    background-color: #4c4c4c;
+    border-width: 2px 1px 1px 0px;
+    border-image: url(laf_resources:/icons/houdini/dark/QSlider_addpage_border.png) 2 1 1 1;
+}
+
+QSlider::sub-page:horizontal:disabled,
+QSlider::add-page:horizontal:disabled
+{
+    background-color: #3d3d3d;
+    border-image: url(laf_resources:/icons/houdini/dark/QSlider_addpage_border_disabled.png) 2 1 1 1;
+}
+
+QSlider::handle:horizontal
+{
+    width: 3px;
+    background-clip: content;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #535353, stop: 1 #3a3a3a);
+    border-width: 2px;
+    border-image: url(laf_resources:/icons/houdini/dark/QSlider_handle_border.png) 2;
+}
+
+QSlider::handle:horizontal:hover
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #575757, stop: 1 #3f3f3f);
+}
+
+QSlider::handle:horizontal:disabled
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(83, 83, 83, 40), stop: 1 rgba(58, 58, 58, 40));
+    border-image: url(laf_resources:/icons/houdini/dark/QSlider_handle_border_disabled.png) 2;
+}
+
+/***************************************
 ** QMenuBar
 ****************************************/
 
