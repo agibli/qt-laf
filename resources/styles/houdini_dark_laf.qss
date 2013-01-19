@@ -20,6 +20,11 @@ QGroupBox
     margin-top: 1.2em;
 }
 
+QGroupBox:disabled
+{
+    border-color: #313131;
+}
+
 QGroupBox::title
 {
     subcontrol-origin: margin;
