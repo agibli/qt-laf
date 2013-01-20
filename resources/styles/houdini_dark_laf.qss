@@ -275,6 +275,40 @@ QCheckBox::indicator:checked:pressed
 }
 
 /***************************************
+** QRadioButton
+****************************************/
+
+QRadioButton::indicator:off
+{
+    image: url(laf_resources:/icons/houdini/dark/QRadioButton_indicator_off.png);
+}
+
+QRadioButton::indicator:off:hover
+{
+    image: url(laf_resources:/icons/houdini/dark/QRadioButton_indicator_off_hover.png);
+}
+
+QRadioButton::indicator:off:disabled
+{
+    image: url(laf_resources:/icons/houdini/dark/QRadioButton_indicator_off_disabled.png);
+}
+
+QRadioButton::indicator:on
+{
+    image: url(laf_resources:/icons/houdini/dark/QRadioButton_indicator_on.png);
+}
+
+QRadioButton::indicator:on:hover
+{
+    image: url(laf_resources:/icons/houdini/dark/QRadioButton_indicator_on_hover.png);
+}
+
+QRadioButton::indicator:on:disabled
+{
+    image: url(laf_resources:/icons/houdini/dark/QRadioButton_indicator_on_disabled.png);
+}
+
+/***************************************
 ** QLineEdit
 ****************************************/
 
