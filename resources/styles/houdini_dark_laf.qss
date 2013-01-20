@@ -167,7 +167,6 @@ QComboBox QAbstractItemView
 
 QComboBox:editable
 {
-    padding: -1px 0px 1px 2px;
     font: 11px Courier;
     background-color: #131313;
     color: white;
